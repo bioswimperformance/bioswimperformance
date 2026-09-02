@@ -349,6 +349,22 @@ p {
 .solution .check-list li strong {
     color: var(--white);
 }
+.solution-image {
+    margin-top: 32px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    background: #1A2A4A;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.solution-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
 
 
 /* =========================
