@@ -467,13 +467,21 @@ p {
 
 .delivery-image {
     background: #1A2A4A;
-
     padding: 20px;
-
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: var(--radius);
-
     box-shadow: var(--shadow);
+    max-width: 500px; /* limita a largura para não ficar gigante */
+    margin: 0 auto;
+}
+
+.delivery-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 9 / 16; /* força proporção 9:16 */
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .delivery-content h2 {
@@ -633,7 +641,7 @@ p {
     margin: 0 auto 25px;
 
     font-size: 18px;
-    color: #555;
+    color: #333; /* mais escuro */
 }
 
 .price {
@@ -661,20 +669,68 @@ p {
     letter-spacing: -0.05em;
 }
 
-.offer-card .primary-button {
-    margin-top: 25px;
+/* ============================================ */
+/* LISTA DE BENEFÍCIOS - TEXTO MAIS ESCURO */
+/* ============================================ */
+.offer-card .check-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 24px;
+    max-width: 500px;
+    text-align: left;
 }
 
+.offer-card .check-list li {
+    padding: 10px 0 10px 32px;
+    border-bottom: 1px solid #E2E8F0;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #0B1F3A; /* escuro */
+    position: relative;
+}
+
+.offer-card .check-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--cyan);
+    font-weight: 900;
+}
+
+.offer-card .check-list li strong {
+    color: #0B1F3A; /* escuro */
+}
+
+.offer-card .check-list li:last-child {
+    border-bottom: none;
+}
+
+/* ============================================ */
+/* BOTÃO - COR IGUAL AO "Free Trial Analysis" */
+/* ============================================ */
+#emailButton {
+    background: var(--gradient);
+    color: var(--white);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.18);
+}
+
+#emailButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0, 123, 255, 0.30);
+}
+
+/* ============================================ */
+/* TEXTO "No commitment..." - MAIS ESCURO */
+/* ============================================ */
 .offer-note {
     margin-top: 18px;
     font-size: 13px;
-    color: #94A3B8;
+    color: #555; /* mais escuro (antes era #94A3B8) */
 }
 
 .offer-note strong {
-    color: #555;
+    color: #333; /* mais escuro */
 }
-
 
 /* =========================
    FOOTER (fundo escuro)
