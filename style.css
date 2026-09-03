@@ -187,6 +187,33 @@ p {
     box-shadow: 0 12px 28px rgba(0, 123, 255, 0.30);
 }
 
+/* ============================================ */
+/* BOTÃO DA OFERTA - MESMA COR DO HERO */
+/* ============================================ */
+#emailButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--gradient);
+    color: var(--white);
+
+    padding: 16px 27px;
+    border-radius: 999px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    transition: 0.2s ease;
+
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.18);
+}
+
+#emailButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0, 123, 255, 0.30);
+}
+
 
 /* =========================
    HERO
@@ -670,7 +697,7 @@ p {
 }
 
 /* ============================================ */
-/* LISTA DE BENEFÍCIOS - TEXTO MAIS ESCURO */
+/* LISTA DE BENEFÍCIOS - TEXTO MAIS ESCURO E MENOR */
 /* ============================================ */
 .offer-card .check-list {
     list-style: none;
@@ -681,10 +708,10 @@ p {
 }
 
 .offer-card .check-list li {
-    padding: 10px 0 10px 32px;
+    padding: 8px 0 8px 32px;
     border-bottom: 1px solid #E2E8F0;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.4rem; /* diminui de 1.5rem para 1.4rem */
     color: #0B1F3A; /* escuro */
     position: relative;
 }
@@ -709,15 +736,27 @@ p {
 /* BOTÃO - COR IGUAL AO "Free Trial Analysis" */
 /* ============================================ */
 #emailButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
     background: var(--gradient);
     color: var(--white);
+
+    padding: 16px 27px;
+    border-radius: 999px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    transition: 0.2s ease;
+
     box-shadow: 0 8px 20px rgba(0, 123, 255, 0.18);
 }
 
 #emailButton:hover {
     transform: translateY(-3px);
     box-shadow: 0 12px 28px rgba(0, 123, 255, 0.30);
-    background: var(--gradient); /* mantém o gradiente no hover */
 }
 
 /* ============================================ */
