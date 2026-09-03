@@ -717,6 +717,7 @@ p {
 #emailButton:hover {
     transform: translateY(-3px);
     box-shadow: 0 12px 28px rgba(0, 123, 255, 0.30);
+    background: var(--gradient); /* mantém o gradiente no hover */
 }
 
 /* ============================================ */
